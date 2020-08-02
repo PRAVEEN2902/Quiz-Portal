@@ -1,0 +1,90 @@
+<%- include('./partials/head.ejs')%>
+<body style="background-color: #ff4301;">
+    <div id="question">
+        <h2 style="color: #ff4301;">Verbal Ability</h2>
+        <form action="/verbal-submit" method="POST" id="form">
+                
+            <div class="q">
+                <p>1. I have not seen him in ____ seven years</p><br>
+                <input type="radio" name="qtn1" id="a" value="the" required><label for="a">the</label><br>
+                <input type="radio" name="qtn1" id="b" value="an"><label for="b">an</label><br>
+                <input type="radio" name="qtn1" id="c" value="a"><label for="c">a</label><br>
+                <input type="radio" name="qtn1" id="d" value="none"><label for="d">none</label><br>
+            </div>
+            <div class="q">
+                <p>2. The Policeman ran ____ the thief</p><br>
+                <input type="radio" name="qtn2" id="a" value="after" required><label for="a">after</label><br>
+                <input type="radio" name="qtn2" id="b" value="out"><label for="b">out</label><br>
+                <input type="radio" name="qtn2" id="c" value="onto"><label for="c">onto</label><br>
+                <input type="radio" name="qtn2" id="d" value="out"><label for="d">out</label><br>
+            </div>
+            <div class="q">
+                <p>3.Synonym of : Infuriate</p><br>
+                <input type="radio" name="qtn3" id="a" value="Exacerbate" required><label for="a">Exacerbate</label><br>
+                <input type="radio" name="qtn3" id="b" value="Fury"><label for="b">Fury</label><br>
+                <input type="radio" name="qtn3" id="c" value="Penetrate"><label for="c">Penetrate</label><br>
+                <input type="radio" name="qtn3" id="d" value="Pacify"><label for="d">Pacify</label><br>
+            </div>
+            <div class="q">
+                <p>4.Choose the word which is the exact OPPOSITE of the given words : 	
+                    ENORMOUS</p><br>
+                <input type="radio" name="qtn4" id="a" value="Soft" required><label for="a">Soft</label><br>
+                <input type="radio" name="qtn4" id="b" value="Weak"><label for="b">Weak</label><br>
+                <input type="radio" name="qtn4" id="c" value="Tiny"><label for="c">Tiny</label><br>
+                <input type="radio" name="qtn4" id="d" value="Average"><label for="d">Average</label><br>
+            </div>
+            <div class="q">
+                <p>5.As a rule of thumb, a manned mission costs from fifty to a hundred times more than a comparable unmanned mission. Thus, for scientific exploration alone, ...(1)... missions, employing machine intelligence, are ...(2)... However, there may well be ...(3)... other than scientific for exploring ...(4)... social, economic, political, cultural or ...(5)...</p><br>
+                <div class="q">
+                    <p>1.Follow the directions</p><br>
+                    <input type="radio" name="qtn5" id="a" value="Manned" required><label for="a">Manned</label><br>
+                    <input type="radio" name="qtn5" id="b" value="Unmanned"><label for="b">Unmanned</label><br>
+                    <input type="radio" name="qtn5" id="c" value="Space"><label for="c">Space</label><br>
+                    <input type="radio" name="qtn5" id="d" value="Lunar"><label for="d">Lunar</label><br>
+                </div>
+                <div class="q">
+                    <p>2.Follow the directions</p><br>
+                    <input type="radio" name="qtn6" id="a" value="Liked" required><label for="a">Liked</label><br>
+                    <input type="radio" name="qtn6" id="b" value="Wanted"><label for="b">Wanted</label><br>
+                    <input type="radio" name="qtn6" id="c" value="Used"><label for="c">Used</label><br>
+                    <input type="radio" name="qtn6" id="d" value="Preffered"><label for="d">Preffered</label><br>
+                </div>
+                <div class="q">
+                    <p>3.Follow the directions</p><br>
+                    <input type="radio" name="qtn7" id="a" value="Reasons" required><label for="a">Reasons</label><br>
+                    <input type="radio" name="qtn7" id="b" value="Causes"><label for="b">Causes</label><br>
+                    <input type="radio" name="qtn7" id="c" value="Clues"><label for="c">Clues</label><br>
+                    <input type="radio" name="qtn7" id="d" value="Objects"><label for="d">Objects</label><br>
+                </div>
+                <div class="q">
+                    <p>4.Follow the directions</p><br>
+                    <input type="radio" name="qtn8" id="a" value="Moon" required><label for="a">Moon</label><br>
+                    <input type="radio" name="qtn8" id="b" value="Sun"><label for="b">Sun</label><br>
+                    <input type="radio" name="qtn8" id="c" value="Space"><label for="c">Space</label><br>
+                    <input type="radio" name="qtn8" id="d" value="Mission"><label for="d">Mission</label><br>
+                </div>
+                <div class="q">
+                    <p>5.Follow the directions</p><br>
+                    <input type="radio" name="qtn9" id="a" value="casual" required><label for="a">casual</label><br>
+                    <input type="radio" name="qtn9" id="b" value="historical"><label for="b">historical</label><br>
+                    <input type="radio" name="qtn9" id="c" value="historic"><label for="c">historic</label><br>
+                    <input type="radio" name="qtn9" id="d" value="histrionic"><label for="d">histrionic</label><br>
+                </div>
+            </div>
+            <div class="q">
+                <p>6.LIGHT:BLIND</p><br>
+                <input type="radio" name="qtn10" id="a" value="a" required><label for="a">speech:dumb</label><br>
+                <input type="radio" name="qtn10" id="b" value="b"><label for="b">language:deaf</label><br>
+                <input type="radio" name="qtn10" id="c" value="c"><label for="c">tongue:sound</label><br>
+                <input type="radio" name="qtn10" id="d" value="d"><label for="d">voice:vibration</label>
+            </div>
+            <div class="center">
+            <button type="submit" class="btn btn-outline-success btn-lg">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

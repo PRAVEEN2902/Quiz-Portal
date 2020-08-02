@@ -1,0 +1,26 @@
+.mark{
+    width: 80%;
+    max-width: 920px;
+    margin:auto;
+    padding: 10px;
+    margin-top: 10%;
+    background-color: white;
+  }
+  .border-gradient {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+  }
+  .border-gradient-green {
+    border-image-source: linear-gradient(to left, #00C853, #B2FF59);
+  }
+  h3{
+    font-family: 'Quicksand', sans-serif;
+    color: green;
+  }
+  
+  a{
+      font-family: 'Quicksand', sans-serif;
+      color: red;
+      
+  }

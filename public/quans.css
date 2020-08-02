@@ -1,0 +1,46 @@
+body{
+    background-color: #6f4a8e;
+}
+#question{
+    width: 90%;
+    max-width: 960px;
+    margin: 20px auto;
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    padding: 0 0 20px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    height: 80%;
+    background-color: white;
+}
+h2{
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bolder;
+}
+#form{
+    margin:40px  ;
+}
+.q{
+    margin:20px;
+    padding: 0 20px;
+}
+/* input[type="radio"]{
+    margin-left: 10px;
+}*/
+label{
+    margin-left: 10px;
+} 
+input[type="radio"]:checked+label { font-weight: bold; }
+ .q p{
+    display: inline;
+    font-weight: bold;
+}
+.center{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}

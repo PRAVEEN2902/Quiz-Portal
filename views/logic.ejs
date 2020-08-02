@@ -1,0 +1,98 @@
+<%- include('./partials/head.ejs')%>
+<body>
+    <div id="question">
+    
+    <h2 style="color: #6f4a8e;">Logical Reasoning</h2>
+        <form action="/lg-submit" method="POST" id="form">
+                
+            <div class="q">
+                <p>1. Introducing a man to her husband, a woman said, “His brother’s father is the only son of my grandfather.” How is the woman related to this man</p><br>
+                <input type="radio" name="qtn1" id="a" value="Uncle" required><label for="a">Mother</label><br>
+                <input type="radio" name="qtn1" id="b" value="Nephew"><label for="b">Aunt</label><br>
+                <input type="radio" name="qtn1" id="c" value="Sister"><label for="c">Sister</label><br>
+                <input type="radio" name="qtn1" id="d" value="Father"><label for="d">Daughter</label><br>
+            </div>
+            <div class="q">
+                <p>2. By how many degrees does the minute hand move in the same time, in which the hour hand move by 18 degree </p><br>
+                <input type="radio" name="qtn2" id="a" value="168" required><label for="a">168 degree</label><br>
+                <input type="radio" name="qtn2" id="b" value="216"><label for="b">216 degree</label><br>
+                <input type="radio" name="qtn2" id="c" value="196"><label for="c">196 degree</label><br>
+                <input type="radio" name="qtn2" id="d" value="276"><label for="d">276 degree</label><br>
+            </div>
+            <div class="q">
+                <p>3. If DELHI is coded as 73541 and CALCUTTA as 82589662, how can CALICUT be coded.</p><br>
+                <input type="radio" name="qtn3" id="a" value="5279431" required><label for="a">5279431</label><br>
+                <input type="radio" name="qtn3" id="b" value="5279431"><label for="b">5279431</label><br>
+                <input type="radio" name="qtn3" id="c" value="8251896"><label for="c">8251896</label><br>
+                <input type="radio" name="qtn3" id="d" value="8543691"><label for="d">8543691</label><br>
+            </div>
+            <div class="q">
+                <p>4.Pointing to a woman, a man said, "Her father is the only son of my father." How is the man related to the woman.</p><br>
+                <input type="radio" name="qtn4" id="a" value="Brother" required><label for="a">Brother</label><br>
+                <input type="radio" name="qtn4" id="b" value="Father"><label for="b">Father</label><br>
+                <input type="radio" name="qtn4" id="c" value="GrandFather"><label for="c">GrandFather</label><br>
+                <input type="radio" name="qtn4" id="d" value="Son"><label for="d">Son</label><br>
+            </div>
+            <div class="q">
+                <p>5.RQP, ONM, _, IHG, FED, find the missing letters.</p><br>
+                    <input type="radio" name="qtn5" id="a" value="CDE" required><label for="a">CDE</label><br>
+                    <input type="radio" name="qtn5" id="b" value="LKI"><label for="b">LKI</label><br>
+                    <input type="radio" name="qtn5" id="c" value="LKJ"><label for="c">LKJ</label><br>
+                    <input type="radio" name="qtn5" id="d" value="BAC"><label for="d">BAC</label><br>
+            </div>   
+             
+            <div class="q">
+                <p>6.Arrange the following words in a meaningful sequence.</p><br>
+                <ul>
+                    <li>Infection</li>
+                    <li>Consultation</li>
+                    <li>Doctor</li>
+                    <li>Treatment</li>
+                    <li>Recovery</li>
+                </ul>
+                    <input type="radio" name="qtn6" id="a" value="a" required><label for="a">1, 3, 4, 5, 2</label><br>
+                    <input type="radio" name="qtn6" id="b" value="b"><label for="b">1, 3, 2, 4, 5</label><br>
+                    <input type="radio" name="qtn6" id="c" value="c"><label for="c">1, 2, 3, 4, 5</label><br>
+                    <input type="radio" name="qtn6" id="d" value="d"><label for="d">2, 3, 5, 1, 4</label><br>
+            </div>
+            <div class="q">
+                <p>7.Peter is in the East of Tom and Tom is in the North of John. Mike is in the South of John then in which direction of Peter is Mike.</p><br>
+                    <input type="radio" name="qtn7" id="a" value="South-East" required><label for="a">South-East</label><br>
+                    <input type="radio" name="qtn7" id="b" value="South-West"><label for="b">South-West</label><br>
+                    <input type="radio" name="qtn7" id="c" value="South"><label for="c">South</label><br>
+                    <input type="radio" name="qtn7" id="d" value="North-East"><label for="d">North-Eest</label><br>
+            </div>         
+            <div class="q">
+                <p>8 </p><br>
+                    <p>I.Pooja is older than Mukesh.</p><br>
+                   <p>II. Suresh is older than Pooja.</p><br>
+                    <p>III. Mukesh is older than Suresh.</p><br>
+                    <p>If the first two statements are true, the third statement is</p><br>
+                    <input type="radio" name="qtn8" id="a" value="True" required><label for="a">True</label><br>
+                    <input type="radio" name="qtn8" id="b" value="False"><label for="b">False</label><br>
+                    <input type="radio" name="qtn8" id="c" value="Uncertain"><label for="c">Uncertain</label><br>
+                    
+            </div>
+            <div class="q">
+                <p>9.Which number would fill the empty space in the series; 4, 7, 12, 19, _, 39.</p><br>
+                    <input type="radio" name="qtn9" id="a" value="28" required><label for="a">28</label><br>
+                    <input type="radio" name="qtn9" id="b" value="24"><label for="b">24</label><br>
+                    <input type="radio" name="qtn9" id="c" value="25"><label for="c">25</label><br>
+                    <input type="radio" name="qtn9" id="d" value="26"><label for="d">26</label><br>
+            </div>
+            <div class="q">
+                <p>10.Which word does not belong to others.</p><br>
+                    <input type="radio" name="qtn10" id="a" value="Inch" required><label for="a">Inch</label><br>
+                    <input type="radio" name="qtn10" id="b" value="Kilogram"><label for="b">Kilogram</label><br>
+                    <input type="radio" name="qtn10" id="c" value="Centimeter"><label for="c">Centimeter</label><br>
+                    <input type="radio" name="qtn10" id="d" value="Yard"><label for="d">Yard</label><br>
+            </div>                   
+           
+            <div class="center">
+            <button type="submit" class="btn btn-outline-success btn-lg">Submit</button>
+            </div>
+        </form>
+    </div>
+    <%- include('./partials/scripts.ejs')%>
+</body>
+</html>
