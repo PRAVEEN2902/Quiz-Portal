@@ -28,7 +28,7 @@ router.get('/facebook',passport.authenticate('facebook',{scope:['email']}));
 router.get('/facebook/callback',passport.authenticate('facebook'),(req,res)=>{
   
   admin.find({email:req.user.email}).then(result=>{
-    if(result!=null)
+    if(result.length!=0)
       {
         var quans,verbals,logical;
         model.logic.find({}).then(datal=>{
