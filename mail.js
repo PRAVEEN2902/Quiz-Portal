@@ -1,12 +1,12 @@
-
+const keys=require('./keys')
 const nodemailer=require('nodemailer');
 let transporter=nodemailer.createTransport({
     host:'smtp.gmail.com',
     port:587,
     secure:false,
     auth:{
-        user:"praveenkumarpdkt25@gmail.com",
-        pass:"ttbvumvlpvflsdvb"
+        user:keys.oAuth.id,
+        pass:keys.oAuth.password
     }
 })
 
