@@ -8,6 +8,7 @@ const verbal_submit=(req,res)=>{
     
     var usval=Object.values(req.body);
     main.userId=req.user.id;
+    main.name=req.user.name;
     answer.find().then((result)=>{
         var ans=result[0].ans
         var count=0;
@@ -51,7 +52,7 @@ const qa_submit=(req,res)=>{
     var main=req.body;
     var userval=Object.values(req.body);
     main.userId=req.user.id;
-
+    main.name=req.user.name;
     answer.find().then((result)=>{
         var qa_ans=result[1].ans
         var count=0;
@@ -95,7 +96,7 @@ const lg_submit=(req,res)=>{
     var main=(req.body);
     var userval=Object.values(req.body);
     main.userId=req.user.id;
-
+    main.name=req.user.name;
     answer.find().then((result)=>{
         var qa_ans=result[2].ans
         var count=0;

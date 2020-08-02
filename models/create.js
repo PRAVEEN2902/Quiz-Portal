@@ -1,6 +1,7 @@
 const mongoose=require('mongoose');
 const Schema1=mongoose.Schema;
 const logical=new Schema1({
+    name:String,
     userId:String,
     qtn1: String,
     qtn2: String,
@@ -19,6 +20,7 @@ const logical=new Schema1({
 const logic=mongoose.model('logical',logical)
 const Schema2=mongoose.Schema
 const verb=new Schema2({
+    name:String,
     userId:String,
     qtn1: String,
     qtn2: String,
@@ -35,6 +37,7 @@ const verb=new Schema2({
 const verbal=mongoose.model('verbal',verb)
 const Schema3=mongoose.Schema
 const quans=new Schema3({
+    name:String,
     userId:String,
     qtn1: String,
     qtn2: String,
