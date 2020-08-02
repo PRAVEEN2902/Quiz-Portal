@@ -53,7 +53,7 @@ passport.use(new FacebookStrategy({
 
 
 passport.use(new GoogleStrategy({
-    callbackURL:' https://apti-portal.herokuapp.com/google/redirect',
+    callbackURL:'/google/redirect',
     clientID:keys.google.clientId,
     clientSecret:keys.google.clientSecret
 },(accessToken,refreshToken,profile,done)=>{

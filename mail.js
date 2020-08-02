@@ -7,9 +7,6 @@ let transporter=nodemailer.createTransport({
     auth:{
         user:"praveenkumarpdkt25@gmail.com",
         pass:"ttbvumvlpvflsdvb"
-    },
-    tls:{
-        rejectUnauthorized:false
     }
 })
 
