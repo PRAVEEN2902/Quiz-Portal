@@ -12,9 +12,11 @@ const cookieSession=require('cookie-session');
 const passportsetup=require('./config/passport');
 const authRoutes=require('./routes/auth')
 const homeRoutes=require('./routes/home')
+//const admin=require('./models/admin')
 const db=`mongodb+srv://Praveen:${keys.db.password}@test.ldcov.mongodb.net/${keys.db.name}?retryWrites=true&w=majority`
 mongoose.connect(db,{useNewUrlParser:true,useUnifiedTopology:true},()=>{
     console.log('Connected');
+   
 })
 
 app.use(cookieSession({

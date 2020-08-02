@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <link rel="shortcut icon" href="apti.png" type="image/x-icon">
+</head>
+<body>
+    
+    
+   <h1>Logical Reasoning</h1>
+   <div class="table-responsive">
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">S.No</th>
+            <th scope="col">Name</th>
+            <th scope="col">Attempts</th>
+            <th scope="col">Marks</th>
+          </tr>
+        </thead>
+        <tbody>
+            <% for(let i=0,j=1;i<logical.length;i++,j++){%>
+                <tr>
+                    <th scope="row"><%=j%></th>
+                    <td><%=logical[i].name%></td>
+                    <td><%=logical[i].mark.length%></td>
+                    <td><%=logical[i].mark%></td>
+                </tr>
+            <%}%>    
+        </tbody>
+      </table>
+  </div>
+    
+  <h1>Verbal Ability</h1>
+  <div class="table-responsive">
+   <table class="table table-bordered">
+       <thead class="thead-dark">
+         <tr>
+           <th scope="col">S.No</th>
+           <th scope="col">Name</th>
+           <th scope="col">Attempts</th>
+           <th scope="col">Marks</th>
+         </tr>
+       </thead>
+       <tbody>
+           <% for(let i=0,j=1;i<verbals.length;i++,j++){%>
+               <tr>
+                   <th scope="row"><%=j%></th>
+                   <td><%=verbals[i].name%></td>
+                   <td><%=verbals[i].mark.length%></td>
+                   <td><%=verbals[i].mark%></td>
+               </tr>
+           <%}%>    
+       </tbody>
+     </table>
+ </div>
+   
+ <h1>Quantitative Aptitude</h1>
+ <div class="table-responsive">
+  <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">S.No</th>
+          <th scope="col">Name</th>
+          <th scope="col">Attempts</th>
+          <th scope="col">Marks</th>
+        </tr>
+      </thead>
+      <tbody>
+          <% for(let i=0,j=1;i<quans.length;i++,j++){%>
+              <tr>
+                  <th scope="row"><%=j%></th>
+                  <td><%=quans[i].name%></td>
+                  <td><%=quans[i].mark.length%></td>
+                  <td><%=quans[i].mark%></td>
+              </tr>
+          <%}%>    
+      </tbody>
+    </table>
+</div>
+  
+    
+    
+    <%- include('./partials/scripts.ejs')%>
+</body>
+</html>
