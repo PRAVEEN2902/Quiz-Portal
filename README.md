@@ -19,5 +19,10 @@ Each users data is *ie. answers that they choose* for validation and further ref
 #### DB:
 * MongoDB<br>
 
+
+
+Uses **Passport.js** middleware for OAuth and **nodemailer** for dynamic mail response.
+
+
 ## [Quiz-Portal](https://apti-portal.herokuapp.com/).
 
