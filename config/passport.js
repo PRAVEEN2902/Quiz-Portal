@@ -17,7 +17,7 @@ passport.deserializeUser((id,done)=>
 passport.use(new FacebookStrategy({
     clientID: keys.facebook.FACEBOOK_APP_ID,
     clientSecret: keys.facebook.FACEBOOK_APP_SECRET,
-    callbackURL: "http://apti-portal.herokuapp.com/facebook/callback",
+    callbackURL: "https://apti-portal.herokuapp.com/facebook/callback",
     profileFields:['email','displayName']
   },
   function(accessToken, refreshToken, profile, done) {
